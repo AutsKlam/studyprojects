@@ -13,7 +13,7 @@
 | 验收 | 后端 56 项测试、前端 typecheck/build、35 项真实运行检查；桌面/窄屏主要流程与重启后已保存数据通过 |
 | 交付入口 | [子仓交付卡](https://github.com/AutsKlam/studyprojects-s0-support/blob/74ca6b1/docs/DELIVERY.md)、[实施验证](https://github.com/AutsKlam/studyprojects-s0-support/blob/74ca6b1/docs/VALIDATION.md)、[页面验收](https://github.com/AutsKlam/studyprojects-s0-support/blob/74ca6b1/docs/BROWSER-VALIDATION.md)、[独立审查](https://github.com/AutsKlam/studyprojects-s0-support/blob/74ca6b1/docs/REVIEW.md) |
 | 本地体验 | `http://127.0.0.1:5173`；本轮结束时保留预览。以后若未运行，按子仓 README 启动 |
-| 根记录审查 | 本记录使用独立文档复核与 PR 归档；结论入口为 `records/S0-ROOT-REVIEW.md`，远端状态以对应 PR 为准 |
+| 根记录审查 | [根 PR 2](https://github.com/AutsKlam/studyprojects/pull/2)；[独立文档复核](S0-ROOT-REVIEW.md)，远端合并状态以该 PR 为准 |
 
 ## 给用户的下一步
 
