@@ -1,8 +1,8 @@
 # 三天学习 plan
 
-版本：v1.1。制定日期：2026-11-11。依据：[固定学习大纲](LEARNING_CHARTER.md)。
+版本：v1.2。制定日期：2026-11-11。依据：[固定学习大纲](LEARNING_CHARTER.md)。
 
-状态：S0 启动准备文档已完成，具体项目尚未开始。根远端、开发环境与 GitHub 登录已核实，任务单已生成，文档分支已推送，[文档 PR 1](https://github.com/AutsKlam/studyprojects/pull/1) 为草稿、尚未合并。用户后续明确要求实施后，再派发业务代码任务。Day 1 从实际实施启动时计算；本计划不设自动开工日期或后台日程。
+状态：用户于 2026-11-11 明确授权开始 S0，子仓设为私有；S0 进入实施，S1–S3 尚未开始。当前状态和交接入口见 [S0 推进记录](records/S0-STATUS.md)。[根文档 PR 1](https://github.com/AutsKlam/studyprojects/pull/1) 尚未合并。Day 1 从本次实际实施启动时计算。
 
 ## 三天目标与预算
 
@@ -26,12 +26,12 @@
 
 ## 启动准备
 
-当前已获知根仓库地址，先完成环境、仓库连接与任务单准备；业务实现仍未启动。准备过程也计入总投入，实施前据实调整预算。由协调者与项目 Planner 完成：
+环境、根仓库连接与任务单准备已完成；用户已授权 S0 实施。准备过程也计入总投入，按实际进度调整预算。以下事项由协调者与项目 Planner 维护：
 
 1. 检查本机运行环境、可用模型与调用方式，选择最少必要依赖；仅在缺少必要信息或权限时提出具体请求。
-2. 根仓库远端为 [AutsKlam/studyprojects](https://github.com/AutsKlam/studyprojects)，已配置 origin，推送空 main 基线与文档分支。GitHub CLI 在沙箱外已验证 AutsKlam 登录和 ADMIN 权限，[文档 PR 1](https://github.com/AutsKlam/studyprojects/pull/1) 已建立为草稿；阶段仓库使用独立远端，地址与可见性在建立前确定。PR 已建立与已审查、已合并分别记录。
+2. 根仓库远端为 [AutsKlam/studyprojects](https://github.com/AutsKlam/studyprojects)，GitHub CLI 在沙箱外可用。S0 使用独立私有仓库 [studyprojects-s0-support](https://github.com/AutsKlam/studyprojects-s0-support)。PR 已建立与已审查、已合并分别记录。
 3. 确认当前产品题目与最小范围，生成 S0 任务单和验收条件。
-4. 建立第一个独立阶段仓库。建议后续使用 `projects/s0-support/`、`projects/s1-support/`、`projects/s2-support/`；路径仅为计划，本轮不创建项目。
+4. S0 本地目录为 `projects/s0-support/`，独立管理 Git。S1、S2 的目录和仓库在对应阶段再建立。
 
 现有 `agentstudy/` 作为资料输入目录保留，不在本轮读取、改写或初始化为阶段项目。根仓库仅管理学习文档与索引。
 
@@ -121,14 +121,14 @@
 | 项目 | 当前状态 |
 | --- | --- |
 | 固定大纲与协调职责 | 已保存 |
-| 三天 plan | v1.1 已保存，启动准备文档已完成，业务实现未开始 |
+| 三天 plan | v1.2，用户已授权 S0 实施 |
 | 文档本地审查 | 已完成独立审查并修正排期冲突，复核无阻塞发现；不等同于远端 PR |
 | 根 Git 仓库 | origin 已配置，空 main 基线 `3b6fe77` 与文档分支 `docs/learning-foundation` 已推送 |
-| S0 启动准备 | 环境与 GitHub 登录已核实，任务单已生成，文档 PR 1 已建立为草稿 |
-| S0、S1、S2 | 均未开始，无项目代码、测试结果或阶段交付 |
+| S0 | 实施中；最新任务、版本与证据见 [推进记录](records/S0-STATUS.md) |
+| S1、S2 | 尚未开始 |
 | S3 | 后续扩展，未排入三天任务 |
-| 远端与 PR | 根远端已连接；[PR 1](https://github.com/AutsKlam/studyprojects/pull/1) 为草稿、未合并，阶段远端尚未确定 |
-| 下一步 | 处理根文档 PR 的审查；用户要求实施后确定阶段远端并派发 S0 R1 |
+| 远端与 PR | 根 [PR 1](https://github.com/AutsKlam/studyprojects/pull/1) 待合并；S0 私有远端已建立 |
+| 下一步 | S0 按 Planner → 实现 → PR → 独立审查 → 运行验收推进 |
 
 ## 计划变更记录
 
@@ -136,3 +136,4 @@
 | --- | --- | --- |
 | 2026-11-11 | v1 | 根据固定大纲建立首版三天计划；独立本地审查指出 S2 集中在第三天的预算冲突，已调整为跨第二、三天推进，并预留 1 小时收尾；具体项目未开始 |
 | 2026-11-11 | v1.1 | 用户提供根仓库地址；核实实际环境、生成 S0 任务单并建立草稿 PR 1；专项排障验证 GitHub CLI 在沙箱外可读取系统凭据，业务代码未开始。预算基线保持 16 小时，实际准备耗时在实施前复核 |
+| 2026-11-11 | v1.2 | 用户明确开始 S0 并指定私有子仓；采用 Sol/ultra 顺序派发规划、实现和审查，增加简短状态入口以控制协调者上下文 |
